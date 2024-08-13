@@ -115,6 +115,7 @@ section.wrapper{
     color: #64748B;
     cursor: pointer;
     width: 61px;
+    height: 40px;
 }
 #navbar .nav-right  .signup{
     padding: 10px;
@@ -129,6 +130,7 @@ section.wrapper{
     text-align: left;
     cursor: pointer;
     width: 73px;
+    height: 40px;
 }
 .line{
     border: 1px solid #E9EEF4;
