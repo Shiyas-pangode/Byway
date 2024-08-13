@@ -127,6 +127,7 @@ section.wrapper{
     line-height: 20px;
     text-align: left;
     cursor: pointer;
+    width: 73px;
 }
 .line{
     border: 1px solid #E9EEF4;
