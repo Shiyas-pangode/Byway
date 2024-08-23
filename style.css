@@ -114,6 +114,7 @@ section.wrapper{
     text-align: left;
     color: #64748B;
     cursor: pointer;
+    background-color: #FFFFFF;
     width: 61px;
     height: 40px;
 }
@@ -142,6 +143,7 @@ section.wrapper{
     height: 600px;
     background-color: #ffffff;
     position: relative;
+    margin-bottom: 50px;
 }
 #spot-light .spotlight-right{
     display: flex;
@@ -727,6 +729,7 @@ section.wrapper{
     align-items: center;
     width:  1123px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 #check-out .checkout-top .checkout-img1{
     width: 400px;
