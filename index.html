@@ -12,6 +12,14 @@
     200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <ul class="dropdown">
+        <li><img onclick="closehamberg()"  class="close-icon" src="images/svgexport-3.svg" alt="image/"></li>
+        <li ><a class="drop-text" href="#">Cart</a></li>
+        <li ><a class="drop-text"href="#">Log In</a></li>
+        <li><a  class="drop-text"href="#">Sign Up</a></li>
+        <li ><a  class="drop-text"href="#">Help</a></li>
+        
+    </ul>
     <section class="wrapper">
         <section id="navbar">
             <div class="nav-left">
@@ -22,17 +30,9 @@
                     <h2><a href="#">Byway</a></h2>
                 </div>
             </div>
-            <div class="menubar">
-                <span class="shade-menubar"><img src="images/svgexport-24.svg" alt="image"/></span>
+            <div  class="menubar">
+                <span onclick= "openhamberg()" class="shade-menubar"><img src="images/svgexport-24.svg" alt="image"/></span>
             </div>
-            <ul class="dropdown">
-                <li><img class="close-icon" src="images/svgexport-3.svg" alt="image/"></li>
-                <li ><a class="drop-text" href="#">Cart</a></li>
-                <li ><a class="drop-text"href="#">Log In</a></li>
-                <li><a  class="drop-text"href="#">Sign Up</a></li>
-                <li ><a  class="drop-text"href="#">Help</a></li>
-                
-            </ul>
             <div class="nav-right">
                 <div class="cart">
                     <img src="images/cart.svg" alt="image"/>
@@ -372,7 +372,7 @@
                 </p>
                <div class="fd-customer">
                     <div class="feedback-img">
-                        <img src="images/span-7.svg" alt="image"/>
+                        <img src="images/Ellipse 61.png" alt="image"/>
                     </div>
                     <div class="customer-info">
                         <h4 class="customer-name">Jane Doe</h4>
@@ -390,7 +390,7 @@
                 </p>
                <div class="fd-customer">
                     <div class="feedback-img">
-                        <img src="images/span-7.svg" alt="image"/>
+                        <img src="images/Ellipse 61.png" alt="image"/>
                     </div>
                     <div class="customer-info">
                         <h4 class="customer-name">Jane Doe</h4>
@@ -408,7 +408,7 @@
                 </p>
                <div class="fd-customer">
                     <div class="feedback-img">
-                        <img src="images/span-7.svg" alt="image"/>
+                        <img src="images/Ellipse 61.png" alt="image"/>
                     </div>
                     <div class="customer-info">
                         <h4 class="customer-name">Jane Doe</h4>
@@ -416,9 +416,9 @@
                     </div>
                </div>
             </div>
-            <div class="feedback-card1">
+            <!-- <div class="feedback-card1">
                 
-            </div>
+            </div> -->
         </div>
     </section>
     <section class="wrapper">
@@ -497,6 +497,16 @@
             </div>
         </section>
     </section>
+    <script>
+        function openhamberg(){
+            const hamberg = document.querySelector('.dropdown');
+            hamberg.style.display ="flex";
+        }
+        function closehamberg(){
+            const hamberg = document.querySelector('.dropdown');
+            hamberg.style.display="none"
+        }
+    </script>
     
 </body>
 </html>

@@ -16,7 +16,6 @@ section.wrapper{
     display: flex;
     justify-content: space-between;
     padding : 13px 0px;
-    background-color: #FFFFFF;
 }
 #navbar .nav-left{
     display: flex;
@@ -50,9 +49,6 @@ section.wrapper{
     display: none;
     
 }
-#navbar .menubar:hover ~ .dropdown {
-   display: flex;
-}
 
 #navbar .menubar .shade-menubar{
     padding: 4px 6px;
@@ -66,28 +62,28 @@ section.wrapper{
     list-style: none;
     gap: 50px;
     padding-right: 30px;
-    overflow: visible ;
+    width: 180px;
+    overflow: none ;
     right: 0;
+    padding-left: 10px;
     z-index: 1;
     gap: 20px;
-    padding: 20px;
     position: absolute;
     height: 90vh;
+    box-shadow: 10px 10px 15px 20px rgba(70, 78, 197, 0.3);
     border: 2px solid rgb(75, 8, 8);
     top: 0;
     background-color: rgba(0, 0, 0, 0.9);
 }
 .dropdown li{
     list-style: none;
+    margin-top: 10px;
 }
 .dropdown .drop-text{
-    padding-top: 30px;
+    
     color: #4592d0;
     font-size: 24px;
     font-weight: 400;
-}
-.dropdown .close-icon:hover + .dropdown {
- display: none;
 }
 .dropdown .close-icon{
     filter: invert(100%);
@@ -106,13 +102,13 @@ section.wrapper{
 #navbar .nav-right .login  {
     padding: 10px ;
     gap: 10px;
-    border: 1px solid #334155;
+    border: 1px solid#334155;
     font-family: "Inter",sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     text-align: left;
-    color: #64748B;
+    color: #334155;
     cursor: pointer;
     background-color: #FFFFFF;
     width: 61px;
@@ -149,7 +145,7 @@ section.wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 0px;
 }
 #spot-light .spotlight-left .spot-head{
     font-size: 40px;
@@ -202,10 +198,11 @@ section.wrapper{
     left: 0;
     right: 0;
     width: 100vw; 
-    margin-left: calc(50% - 50vw); 
+    margin-left: calc(49.3% - 50vw); 
     position: relative;
         
 }
+
 #courses  .course-content .course-text{
     display: flex;
     flex-direction: column;
@@ -220,7 +217,7 @@ section.wrapper{
     text-align: left;
     color: #0F172A;
 }
-#courses .course-content .course-nb .sub-content{
+#courses .course-content  .sub-content{
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -267,10 +264,12 @@ section.wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 34px;
 }
 #categories .categories-content .categories-card{
     padding: 24px 93px 24px 93px;
     border-radius: 16px;
+    cursor: pointer;
     border: 1px solid #E2E8F0;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 8px 0px #3B82F61F;
@@ -279,13 +278,13 @@ section.wrapper{
     justify-content: center;
     align-items: center;
     text-align:center ;
-    margin-top: 34px;
     width: 286px;
     height: 224px;
 }
 #categories .categories-content .categories-card2{
     padding: 24px 93px 24px 93px;
     border-radius: 16px;
+    cursor: pointer;
     border: 1px solid #E2E8F0;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 8px 0px #3B82F61F;
@@ -294,7 +293,6 @@ section.wrapper{
     justify-content: center;
     align-items: center;
     text-align:center ;
-    margin-top: 34px;
     width: 315px;
     height: 224px;
 }
@@ -399,6 +397,7 @@ section.wrapper{
 #top-course .topcourse-content .product-card{
     height: 338px ;
     width:298px ;
+    cursor: pointer;
     border-radius: 16px;
     display: flex;
     padding: 16px;
@@ -519,6 +518,7 @@ section.wrapper{
     width: 212px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     text-align: center;
     height: 281px;
     padding: 16px ;
@@ -632,14 +632,15 @@ section.wrapper{
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    justify-content: space-between;
-    padding: 24px 0px 0px 80px;
+    justify-content: left;
+    padding: 24px 0px 0px 75px;
     background-color:#F8FAFC ;
 }
 #feedback .feed-content .feedback-card{
     width: 432px;
     height: 276px;
     padding: 24px ;
+    cursor: pointer;
     gap: 8px;
     border-radius: 16px ;
     border: 1px ;
@@ -688,15 +689,18 @@ section.wrapper{
     align-items: center;
     gap: 8px;
     padding-top: 8px;
+    
 }
 #feedback .feed-content .feedback-card .fd-customer .feedback-img{
     width: 60px;
     height: 60px;
+    
 }
 #feedback .feed-content .feedback-card .fd-customer .feedback-img img{
     display: block;
     width: 100%; 
-    border-radius: 57%;
+    border-radius: 50%;
+    
 }
 #feedback .feed-content .feedback-card .fd-customer .customer-info{
     display: flex;
@@ -864,7 +868,6 @@ section.wrapper{
 }
 #footer .footer-content .footer-logo {
     width: 111px;
-    height: 40px;
     margin-bottom: 16px;
 
 }
@@ -948,12 +951,21 @@ section.wrapper{
     
 }
 @media(max-width:1110px){
+    #categories .categories-content .categories-card2 {
+        width: 286px;
+    }
+
     #instructors .instructors-content {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
         padding-top: 24px;
+    }
+    #footer .footer-items .footer-sociallogo {
+        width: 196px;
+        padding-top: 16px;
+        cursor: pointer;
     }
     #check-out .checkout-top .checkout-top-t .checkout-p {
         width: 100%;
@@ -1093,6 +1105,7 @@ section.wrapper{
         width: 70%;
         font-weight: 500;
     }
+    
     #spot-light .spotlight-left .paragaraph-1 {
         padding-top: 6px;
         font-size: 14px;
@@ -1108,10 +1121,11 @@ section.wrapper{
         display: flex;
         justify-content: space-around;
         align-items: normal;
-        height: 450px;
+        height: 300px;
+        margin-bottom: 0px;
     }
     #spot-light .spotlight-left{
-        padding-top: 80px ;
+        padding-top: 40px ;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -1125,9 +1139,11 @@ section.wrapper{
         align-items: center;
         padding: 8px 8px 8px 8px;
         gap: 2px;
-        font-size: 14px;
-        width: 170px;
+        font-size: 13px;
         
+    }
+    #check-out .checkout-bottom .checkout-b1 {
+        font-size: 13px;
     }
     #check-out .checkout-top {
         justify-content: center;
@@ -1172,7 +1188,7 @@ section.wrapper{
     
 
 }
-@media(max-width:570px){
+@media(max-width:571px){
     #courses .course-square {
       display: none;
     }
@@ -1199,16 +1215,16 @@ section.wrapper{
     }
     #feedback .feedback-top{
         gap: 10px;
-        justify-content: center;
+        justify-content: space-between;
         width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     #feedback .feedback-top .fdtop-text {
-        width: 50%;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 33.6px;
+        width: 200PX;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23.6px;
     }
     #instructors .instructors-top .instructor-head {
         font-size: 18px;
@@ -1220,10 +1236,26 @@ section.wrapper{
         width: 300px;
         height: 200px;
     }
+    #courses .course-square {
+        display: none;
+    }
     #categories .categories-content .categories-card {
         margin-top: 8px;
         width: 300px;
         height: 200px;
+    }
+    #check-out .checkout-top .checkout-top-t .checkout-b {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 4px 8px 4px;
+        gap: 2px;
+        font-size: 13px;
+        
+    }
+    #check-out .checkout-bottom .checkout-b1 {
+        font-size: 13px;
+        padding: 10px 14px 10px 14px;
     }
 
     #footer .footer-items .footer-sociallogo {
@@ -1280,6 +1312,43 @@ section.wrapper{
     }
     
     
+}
+@media(max-width:480px){
+    #spot-light .spotlight-left .spot-head {
+        font-size: 24px;
+        width: 70%;
+        font-weight: 600;
+    }
+    #footer .footer-items .footer-sociallogo {
+        width: 166px;
+        padding-top: 16px;
+        cursor: pointer;
+    }
+    #feedback .feedback-top .feed-button {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+    }
+    #feedback .feedback-top .fdtop-text {
+        width: 200px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    #feedback .feedback-top {
+        gap: 10px;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #feedback .feedback-top .feed-button .fd-button {
+        padding: 6px 10px 6px 10px;
+        border-radius: 8px;
+        background-color: #94A3B8;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+    }
 }
 @media(max-width:360px){
     #footer .footer-items .footer-small {
